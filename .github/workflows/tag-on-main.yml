@@ -19,18 +19,14 @@ jobs:
       - name: Set up GitHub CLI auth
         run: echo "${{ secrets.PAT_TOKEN }}" | gh auth login --with-token
 
-      - name: Determine new tag
+      - name: Generate timestamp-based tag
         id: tagging
         run: |
-          git fetch --tags
-          latest=$(git tag --sort=-creatordate | tail -n 1)
-          latest=${latest:-v0.0.0}
-          IFS='.' read -r major minor patch <<< "${latest#v}"
-          new_tag="v$major.$minor.$((patch + 1))"
-          echo "new_tag=$new_tag" >> $GITHUB_OUTPUT
+          timestamp=$(date -u +"v%Y%m%d-%H%M%S")
+          echo "new_tag=$timestamp" >> $GITHUB_OUTPUT
 
-      - name: Create GitHub Release with tag
+      - name: Create GitHub Release with timestamped tag
         run: |
           gh release create ${{ steps.tagging.outputs.new_tag }} \
             --title "Release ${{ steps.tagging.outputs.new_tag }}" \
-            --notes "Auto-generated release after merge into main."
+            --notes "Auto-generated release using timestamp-based versioning."
