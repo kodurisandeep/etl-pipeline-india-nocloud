@@ -4,8 +4,19 @@ A lightweight Python-based ETL pipeline that extracts, transforms, and loads agr
 
 ## 📂 Project Structure
 
-india_etl/ ├── data/ │ └── rawcsvdataset.csv ├── scripts/ │ ├── extract.py │ ├── transform.py │ ├── load.py │ ├── run_etl.py │ └── init.py ├── database.db ├── requirements.txt ├── .gitignore └── README.md
-
+india_etl/
+├── data/
+│   └── rawcsvdataset.csv
+├── scripts/
+│   ├── extract.py
+│   ├── transform.py
+│   ├── load.py
+│   ├── run_etl.py
+│   └── __init__.py
+├── database.db
+├── requirements.txt
+├── .gitignore
+└── README.md
 
 ## 🛠️ Tools Used
 

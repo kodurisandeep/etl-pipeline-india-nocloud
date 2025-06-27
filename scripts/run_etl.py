@@ -37,6 +37,7 @@ def validate_load(db_path: str, table_name: str = "irrigation_data"):
     count = cursor.fetchone()[0]
     logging.info(f"Validation: {count} records found in '{table_name}' table.")
     cursor.execute(f"SELECT * FROM {table_name} LIMIT 5")
+    ##test
     rows = cursor.fetchall()
     for row in rows:
         logging.info(row)
