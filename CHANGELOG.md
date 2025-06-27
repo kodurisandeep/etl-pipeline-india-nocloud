@@ -1,5 +1,14 @@
 # Changelog
 
+## [v20250627-072818](https://github.com/kodurisandeep/etl-pipeline-india-nocloud/tree/v20250627-072818) (2025-06-27)
+
+[Full Changelog](https://github.com/kodurisandeep/etl-pipeline-india-nocloud/compare/v20250627-063958...v20250627-072818)
+
+**Merged pull requests:**
+
+- Work notes [\#11](https://github.com/kodurisandeep/etl-pipeline-india-nocloud/pull/11) ([kodurisandeep](https://github.com/kodurisandeep))
+- Sit [\#10](https://github.com/kodurisandeep/etl-pipeline-india-nocloud/pull/10) ([kodurisandeep](https://github.com/kodurisandeep))
+
 ## [v20250627-063958](https://github.com/kodurisandeep/etl-pipeline-india-nocloud/tree/v20250627-063958) (2025-06-27)
 
 [Full Changelog](https://github.com/kodurisandeep/etl-pipeline-india-nocloud/compare/v20250627-063459...v20250627-063958)
